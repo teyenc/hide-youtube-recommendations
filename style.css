@@ -1,0 +1,5 @@
+/* style.css */
+/* Just in case you want to hide it using CSS */
+#secondary {
+    display: none !important;
+}

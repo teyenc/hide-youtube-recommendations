@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Hide YouTube Recommendations",
+    "version": "1.0",
+    "description": "A Chrome extension to hide recommendations on YouTube's right sidebar.",
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "icon.png"
+    }
+}
